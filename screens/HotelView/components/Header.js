@@ -6,9 +6,8 @@ import Entypo from 'react-native-vector-icons/Entypo'
 
 import {gs} from '../../../styles'
 
-export default class Header extends Component {
+export default function Header() {
   
-  render() {
     return (
       <View>
         <Image source={require("../../../assets/hotel.jpg")} style={{width:"100%",height:400}}/>
@@ -25,13 +24,13 @@ export default class Header extends Component {
       </View>
     );
   }
-}
+
 
 const styles = StyleSheet.create({
   topButtons:{
     ...gs.rowBetwenn,
-    position:"absolute",
-    top:64,
+    position:'absolute',
+    top:24,
     left:32,
     right:32
   },

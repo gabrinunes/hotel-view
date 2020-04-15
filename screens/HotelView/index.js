@@ -1,19 +1,27 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { View, Text,StyleSheet,StatusBar} from 'react-native';
 
 import {colors} from '../../styles'
 
 import Header from './components/Header'
-export default class index extends Component {
-  render() {
+import Bookmark from './components/Bookmark'
+import About from './components/About'
+import Stats from './components/Stats'
+export default function index () {
+
     return (
       <View style={styles.container}>
           <StatusBar barStyle="light-content"/>
-          <Header/>
+           <Header/>
+           <View>
+           <Bookmark/>
+           <About/>
+           <Stats/>
+           </View>
       </View>
     );
   }
-}
+
 
 const styles = StyleSheet.create({
     container:{

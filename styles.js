@@ -15,8 +15,32 @@ export const gs = StyleSheet.create({
       flexDirection:'row',
       alignItems:'center'
     },
+    sectionContainer:{
+        paddingHorizontal:32,
+        paddingVertical:24,
+        marginBottom:8,
+        backgroundColor: colors.lightBg
+    },
     rowBetwenn:{
-        flexDirection:"row",
-        justifyContent:"space-between"
+        flexDirection:'row',
+        justifyContent:'space-between'
+    },
+    center:{
+        alignItems:'center',
+        justifyContent:'center'
+    },
+    title:{
+     color: colors.text,
+     fontSize:30
+    },
+    divider:{
+        borderBottomColor:'#444',
+        borderBottomWidth:1,
+        marginVertical:24
+    },
+    sectionTitle:{
+      fontWeight:'700',
+      color:colors.text,
+      fontSize:15
     }
 })
