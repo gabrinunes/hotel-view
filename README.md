@@ -5,6 +5,6 @@ Projeto Replicado de um canal do youtube:https://www.youtube.com/watch?v=G--C3nZ
 
 Projeto original foi feito em com Expo,nesse caso optei por usar React native puro como uma forma de estudo 
 
-![hotel-view](https://github.com/gabrinunes/place-finder/blob/master/hotel.gif)
+![hotel-view](https://github.com/gabrinunes/hotel-view/blob/master/hotel.gif)
 
 
