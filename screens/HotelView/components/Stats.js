@@ -7,6 +7,10 @@ import Entypo from 'react-native-vector-icons/Entypo'
 
 const starColors=["#e3ab53","#e3ab53","#e3ab53","#e3ab53","#8b6f43"]
 
+const Circle = props =>{
+    return <View style={[styles.circle,props.style]}/>
+}
+
 export default function Status(){
     return(
        <View style={styles.container}>
@@ -18,20 +22,26 @@ export default function Status(){
                  <Text style={styles.subTitle}>Sunny</Text>
                </View>
            </View>
+                
+                <View>
+                  <Text style={styles.title}>
+                      8.4
+                      <Text style={styles.subTitle}>&nbsp;&nbsp; +6k Votes</Text>
+                  </Text>
 
-               <Text style={styles.title}>
-                  8.4
-               </Text>
-               <Text style={styles.subTitle}>
-                  &nbsp;&nbsp; +6k Votes
-               </Text>
-               <View style={gs.rowCenter}>
-                    {starColors.map((color,index)=>{
-                        return(
-                            <Entypo name ="star" size={14} color={color} key={index} style={{marginHorizontal:2}}/>
-                        )
-                    })}
-               </View>
+                  <View style={gs.rowCenter}>
+                      {starColors.map((color,index)=>{
+                          return(
+                              <Entypo name="star" size={14} color={color} key={index} style={{marginHorizontal:2}}/>
+                          )
+                      })}
+                  </View>
+                </View>
+             <View style={styles.circlesContainer}>
+                 <Circle style={{backgroundColor:'#999',marginRight:-10,zIndex:3}}/>
+                 <Circle style={{backgroundColor:'#888',marginRight:-10,zIndex:2}}/>
+                 <Circle style={{backgroundColor:'#777',marginRight:-10,zIndex:1}}/>
+             </View>  
        </View>
     )
 }
@@ -56,6 +66,19 @@ const styles = StyleSheet.create({
     subTitle:{
         color: colors.textSec,
         fontSize:10,
+        paddingRight:8,
         fontWeight:"800"
+    },
+    circlesContainer:{
+     flex:1,
+     flexDirection:"row",
+     justifyContent:"flex-end"
+    },
+    circle:{
+     width:36,
+     height:36,
+     borderRadius:36/2,
+     borderWidth:2,
+     borderColor: colors.lightBg
     }
 })

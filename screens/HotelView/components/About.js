@@ -5,10 +5,10 @@ import {StyleSheet,Text,View} from 'react-native'
 import {gs,colors} from '../../../styles'
 export default function About(){
     const hotel={
-        name:"Pousada dos Corais",
+        name:"Pousada",
         price:'R$150,00',
         location:"Algoodoal/PA",
-        about:"Lorem ipsum dolor amet"
+        about:"aplicando conceitos de UI com react native"
     }
     
     return(
